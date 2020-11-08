@@ -19,16 +19,16 @@ def create_product(request):
 
     return render(request, 'products-form.html', {'form': form})
 
-# #Updating process
-# def update_product(request, id):
-#     product = Product.objects.get(id=id)
-#     form = ProductForm(request.POST or None, instance=product)
+#Updating process
+def update_product(request, id):
+    product = Product.objects.get(id=id)
+    form = ProductForm(request.POST or None, instance=product)
 
-#     if form.is_valid():
-#         form.save()
-#         return redirect('list_products')
+    if form.is_valid():
+        form.save()
+        return redirect('list_products')
 
-#     return render(request, 'products-form.html', {'form':form, 'product': product})
+    return render(request, 'products-form.html', {'form':form, 'product': product})
 
 # #Deleting process
 # def delete_product(request, id):
