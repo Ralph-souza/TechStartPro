@@ -30,14 +30,14 @@ def update_product(request, id):
 
     return render(request, 'products-form.html', {'form':form, 'product': product})
 
-# #Deleting process
-# def delete_product(request, id):
-#     product = Product.objects.get(id=id)
+#Deleting process
+def delete_product(request, id):
+    product = Product.objects.get(id=id)
 
-#     if request.method == 'POST':
-#         product.delete()
-#         return redirect('list_products')
+    if request.method == 'POST':
+        product.delete()
+        return redirect('list_products')
 
-#     return render(request, 'prod-delete-confirm.html', {'product': product})
+    return render(request, 'prod-delete-confirm.html', {'product': product})
 
 # Create your views here.
