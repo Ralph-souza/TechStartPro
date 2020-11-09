@@ -1,4 +1,27 @@
 
+# Tech Start Pro (Olist) Project
+
+# 1.Versions 
+* Ubuntu 18.04.5 LTS
+* Visual Studio Code
+* Django 2.2.17
+* Python 3.6.9
+* JQuery 3.3.1
+
+# 2.Instructions
+
+* Install Virtualenv: $ python -m venv <'environment's name'>
+* Install pip: $ python -m pip install --upgrade pip
+
+# 2.2 Preparing the project
+* $ git clone
+* Activate the virtualenv: $ source <'virtualenv's name'>/bin/activate
+* Install required packages: $ pip install -r requirements.txt
+* Run migrate command to start Data Base: <'virtualenv on'> $ python manage.py migrate
+* Run application <'virtualenv on'> $ python manage.py runserver
+
+Access applictaion through: <link>http://localhost:8000</link>
+
 # Trabalho no olist
 Olist é uma empresa que oferece uma plataforma de integração para vendedores e marketplaces, permitindo-lhes vender seus produtos em vários canais.
 
