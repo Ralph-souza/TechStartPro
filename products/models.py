@@ -1,6 +1,14 @@
 from django.db import models
 
 # Create your models here.
+# Categories List
+CATEGORY_CHOICES = (
+    ('MOVEIS', 'moveis'),
+    ('DECORACAO', 'decoracao'),
+    ('CELULAR', 'celular'),
+    ('INFORMATICA', 'informatica'),
+    ('BRINQUEDOS', 'brinquedos')
+)
 
 # Products Data Base
 class Product(models.Model):
@@ -13,14 +21,6 @@ class Product(models.Model):
         return self.category
 
 # Categories Data Base
-CATEGORY_CHOICES = (
-    ('MOVEIS', 'moveis'),
-    ('DECORACAO', 'decoracao'),
-    ('CELULAR', 'celular'),
-    ('INFORMATICA', 'informatica'),
-    ('BRINQUEDOS', 'brinquedos')
-)
-
 class Category(models.Model):
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
 
