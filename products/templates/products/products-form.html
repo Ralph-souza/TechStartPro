@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
     </form>
 
     {% if product %}
-        <a href="{% url 'delete_product' product.id %}">Delete</a>
+        <a href="{% url 'products:delete_product' product.id %}">Delete</a>
     {% endif %}
 </body>
 </html>
