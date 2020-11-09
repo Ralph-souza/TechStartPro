@@ -1,0 +1,9 @@
+{% extend 'base.html' %}
+
+<ul>
+    {% for product in prodcuts %}
+    <a href="{% url 'update_product' product.id %}">
+        <li> {{ product. description }} </li>
+    </a>
+    {% endfor %}
+</ul>
