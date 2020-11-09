@@ -22,6 +22,11 @@
 
 Access applictaion through: <link>http://localhost:8000</link>
 
+# Below you will find the rules of the test.
+
+
+
+
 # Trabalho no olist
 Olist é uma empresa que oferece uma plataforma de integração para vendedores e marketplaces, permitindo-lhes vender seus produtos em vários canais.
 
